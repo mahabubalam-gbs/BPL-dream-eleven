@@ -6,11 +6,11 @@ import dollarImg from "../../assets/dollar-1.png"
 const Navbar = () => {
     return (
         <div>
-            <div className="navbar max-w-[1200px] mx-auto">
+            <div className="navbar max-w-300 mx-auto">
                 <div className="flex-1">
                     <img className="w-15 h-15" src={navImg} alt="" />
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center border p-1">
                     <span className='mr-1'>600000000</span>
                     <span className='mr-1'>Coin</span>
                     <img src={dollarImg} alt="" />
