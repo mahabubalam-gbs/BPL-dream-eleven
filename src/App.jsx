@@ -12,7 +12,7 @@ const playersPromise = fetchPlayers()
 
 function App() {
   const [toggle, setToggle] = useState(true)
-  const [availableBalance, setAvailableBalance] = useState(600000000)
+  const [availableBalance, setAvailableBalance] = useState(2700000)
 
 
 

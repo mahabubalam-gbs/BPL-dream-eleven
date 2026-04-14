@@ -5,9 +5,15 @@ import flagImg from "../../assets/report-1.png"
 const Players = ({ player, availableBalance, setAvailableBalance }) => {
     const [isSelected, setIsSelected] = useState(false)
     const { player_image, player_name, player_country, bating_style, bowling_style, playing_role, price, rating } = player;
-    const handleSelected = (playerPrice) => {
+
+    const handleSelected = (price) => {
+        const playerPrice = parseInt(price.split("USD").join("").split(",").join(""))
+        if (availableBalance < playerPrice) {
+            alert("Not Enough Coins!!");
+            return;
+        }
         setIsSelected(true)
-        setAvailableBalance(availableBalance - playerPrice.split("USD").join("").split(",").join(""))
+        setAvailableBalance(availableBalance - playerPrice)
     }
 
     return (
