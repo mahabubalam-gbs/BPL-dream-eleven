@@ -15,6 +15,10 @@ function App() {
   const [availableBalance, setAvailableBalance] = useState(2700000)
   const [purchasedPlayers, setPurchasedPlayers] = useState([])
 
+  const removePlayer = (deletedPlayer) => {
+    const filteredData = purchasedPlayers.filter(player => player.id !== deletedPlayer.id);
+    setPurchasedPlayers(filteredData)
+  }
 
   return (
     <>
@@ -32,7 +36,7 @@ function App() {
       {
         toggle === true ? <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
           <AvailablePlayers purchasedPlayers={purchasedPlayers} setPurchasedPlayers={setPurchasedPlayers} availableBalance={availableBalance} setAvailableBalance={setAvailableBalance} playersPromise={playersPromise}></AvailablePlayers>
-        </Suspense> : <SelectedPlayers purchasedPlayers={purchasedPlayers} ></SelectedPlayers>
+        </Suspense> : <SelectedPlayers removePlayer={removePlayer} purchasedPlayers={purchasedPlayers} ></SelectedPlayers>
       }
 
 

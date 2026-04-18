@@ -1,5 +1,4 @@
 import React, { use } from 'react';
-
 import Players from '../Players/Players';
 
 const AvailablePlayers = ({ playersPromise, availableBalance, setAvailableBalance, purchasedPlayers, setPurchasedPlayers }) => {
