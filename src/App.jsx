@@ -18,6 +18,7 @@ function App() {
   const removePlayer = (deletedPlayer) => {
     const filteredData = purchasedPlayers.filter(player => player.id !== deletedPlayer.id);
     setPurchasedPlayers(filteredData)
+    setAvailableBalance(availableBalance + parseInt(deletedPlayer.price.split("USD").join("").split(",").join("")))
   }
 
   return (
