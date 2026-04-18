@@ -13,6 +13,12 @@ const Players = ({ player, availableBalance, setAvailableBalance, purchasedPlaye
             toast("Not Enough Coins!!");
             return;
         }
+
+        if (purchasedPlayers.length === 6) {
+            toast("You have Purchased 6 Players Already!");
+            return;
+        }
+
         setIsSelected(true);
         setAvailableBalance(availableBalance - playerPrice);
         setPurchasedPlayers([...purchasedPlayers, player])
