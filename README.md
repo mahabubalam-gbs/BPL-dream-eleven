@@ -1,2 +1,3 @@
-Project Preview
+# Project Preview
 ![Home Page](src/assets/home-page.png)
+![Selected Players](src/assets/selected-players.png)
