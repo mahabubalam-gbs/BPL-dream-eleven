@@ -21,7 +21,8 @@ const Players = ({ player, availableBalance, setAvailableBalance, purchasedPlaye
 
         setIsSelected(true);
         setAvailableBalance(availableBalance - playerPrice);
-        setPurchasedPlayers([...purchasedPlayers, player])
+        setPurchasedPlayers([...purchasedPlayers, player]);
+        toast("Player Purchased Successfully!")
     }
 
     return (
