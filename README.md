@@ -1,9 +1,9 @@
-🏏 BPL Dream Eleven
+# 🏏 BPL Dream Eleven
 
 A fantasy cricket team selection web application where users can build their dream squad by choosing players within a fixed budget. This project is built using React.js and simulates a real-world team selection experience with constraints like player limits and coin balance.
 
 
-🚀 Features
+# 🚀 Features
 
 🧑‍🤝‍🧑 Browse available cricket players
 
