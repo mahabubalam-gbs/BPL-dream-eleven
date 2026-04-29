@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div>
+        <div className='flex flex-col'>
             <footer className="footer sm:footer-horizontal bg-[#060919] text-gray-400 p-10 flex justify-around">
                 <div>
                     <h6 className="font-bold text-white">About Us</h6>
@@ -19,16 +19,21 @@ const Footer = () => {
                 <form>
                     <h6 className="font-bold text-white">Subscribe</h6>
                     <fieldset className="w-80">
-                        <label>Enter your email address</label>
-                        <div className="join">
+                        <label>Subscribe to our newsletter for the latest updates address</label>
+                        <div className="join mt-3">
                             <input
                                 type="text"
-                                placeholder="username@site.com"
-                                className="input input-bordered join-item" />
-                            <button className="btn btn-primary join-item">Subscribe</button>
+                                placeholder="Enter your email"
+                                className="input join-item" />
+                            <button className="btn bg-linear-to-bl from-[#E591BA] to-[#F5D058] join-item ">Subscribe</button>
                         </div>
                     </fieldset>
                 </form>
+            </footer>
+            <footer className="footer text-white sm:footer-horizontal footer-center bg-[#060919] p-4">
+                <aside>
+                    <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+                </aside>
             </footer>
         </div>
     );
