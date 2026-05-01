@@ -4,7 +4,7 @@ import SelectedCard from '../SelectedCard/SelectedCard';
 const SelectedPlayers = ({ purchasedPlayers, removePlayer }) => {
 
     return (
-        <div className='max-w-300 mx-auto'>
+        <div className='max-w-300 min-h-dvh mx-auto'>
             {
                 purchasedPlayers.map(player => <SelectedCard
                     key={player.id}

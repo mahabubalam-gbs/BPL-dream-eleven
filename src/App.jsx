@@ -37,7 +37,7 @@ function App() {
       </div>
 
       {
-        toggle === true ? <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
+        toggle === true ? <Suspense fallback={<span className="loading loading-spinner flex mx-auto loading-xl"></span>}>
           <AvailablePlayers purchasedPlayers={purchasedPlayers} setPurchasedPlayers={setPurchasedPlayers} availableBalance={availableBalance} setAvailableBalance={setAvailableBalance} playersPromise={playersPromise}></AvailablePlayers>
         </Suspense> : <SelectedPlayers removePlayer={removePlayer} purchasedPlayers={purchasedPlayers} ></SelectedPlayers>
       }
